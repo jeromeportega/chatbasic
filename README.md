@@ -14,12 +14,13 @@
 ### How To Run
 1. Clone the repo: https://github.com/jeromeportega/chatbasic
 2. Open terminal and navigate into the chat basic folder.
-3. Enter the command "npm start"
-4. Open additional terminal window.
-5. Navigate to chatbasic/src/server
-6. Enter the command "node index.js"
-7. Open your browser of choice and navigate to localhost:3000
-8. Use as many browser tabs as you like to simulate multiple users
+3. Enter the command "npm install"
+4. Enter the command "npm start"
+5. Open additional terminal window.
+6. Navigate to chatbasic/src/server
+7. Enter the command "node index.js"
+8. Open your browser of choice and navigate to localhost:3000
+9. Use as many browser tabs as you like to simulate multiple users
 
 ##### Other Notes
 - In order to Private Message, log into the app with two tabs.  On one tab, type the other users name into the search bar and hit enter.  The chat will appear on both users list of available rooms.
