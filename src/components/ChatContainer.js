@@ -17,8 +17,6 @@ export default class ChatContainer extends Component {
 
   componentDidMount() {
     const { socket } = this.props;
-
-    socket.emit('COMMUNITY_CHAT', this.resetChat);
     this.initSocket(socket);
   }
 
@@ -51,6 +49,7 @@ export default class ChatContainer extends Component {
 
     socket.on(typingEvent, this.updateTypingInChat(chat.id));
     socket.on(messageEvent, this.addMessageToChat(chat.id));
+    console.log(this.state.chats);
   }
 
   addMessageToChat = (chatId) => {

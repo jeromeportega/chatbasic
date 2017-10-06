@@ -15,7 +15,7 @@ module.exports = function(socket) {
     if(isUser(connectedUsers, nickname)){
       callback({ isUser:true, user:null });
     } else {
-      callback({ usUser:false, user:createUser({name:nickname, socketId:socket.id})});
+      callback({ isUser:false, user:createUser({name:nickname, socketId:socket.id})});
     }
   });
 

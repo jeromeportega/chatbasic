@@ -4,7 +4,7 @@ import { USER_CONNECTED, LOGOUT } from '../Events';
 import LoginForm from './LoginForm';
 import ChatContainer from './ChatContainer';
 
-const socketUrl = "http://192.168.0.101:8000";
+const socketUrl = "localhost:8000";
 export default class Layout extends Component {
   constructor(props) {
     super(props);
@@ -29,8 +29,8 @@ export default class Layout extends Component {
 
   setUser = (user) => {
     const { socket } = this.state;
-    socket.emit(USER_CONNECTED, user);
     this.setState({user});
+    socket.emit(USER_CONNECTED, user);
   }
 
   logout = () => {

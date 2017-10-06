@@ -14,6 +14,7 @@ export default class Messages extends Component {
 
   componentDidMount() {
     this.scrollDown();
+    console.log(this.props.user);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -22,6 +23,7 @@ export default class Messages extends Component {
 
   render() {
     const { messages, user, typingUsers } = this.props;
+    console.log(this.props.messages);
     return (
       <div ref='container' className="thread-container">
         <div className="thread">
