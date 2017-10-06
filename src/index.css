@@ -182,17 +182,12 @@ textarea {
     display: flex;
     height: 66px;
     justify-content: flex-start;
-    padding: 18px 16px
+    padding: 18px 16px;
 
 }
 
-#side-bar .users .user.active,
 #side-bar .users .user:hover {
-    background: #2e2e4f
-}
-
-#side-bar .users .user:hover:not(.active) {
-    cursor: pointer
+    background: rgba(46, 46, 79, 0.5);
 }
 
 #side-bar .users .user .user-info {

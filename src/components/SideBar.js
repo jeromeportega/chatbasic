@@ -42,7 +42,7 @@ export default class SideBar extends Component{
 								const classNames = (activeChat && activeChat.id === chat.id) ? 'active' : ''
 
 								return(
-  								<div key={chat.id} className={`user ${classNames}`} onClick={() => {setActiveChat(chat)}}>
+  								<div key={chat.id} className={`user ${classNames} pointer`} onClick={() => {setActiveChat(chat)}}>
   									<div className="user-photo">{chatSideName[0].toUpperCase()}</div>
   									<div className="user-info">
   										<div className="name">{chatSideName}</div>

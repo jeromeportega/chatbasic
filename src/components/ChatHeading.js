@@ -11,7 +11,7 @@ export default function({name, logout}) {
         </div>
       </div>
       <div className="options">
-        <div onClick={()=>{logout()}} title="Logout" className="logout">
+        <div onClick={()=>{logout()}} title="Logout" className="logout pointer">
           Log Out
         </div>
       </div>
